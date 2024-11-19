@@ -13,15 +13,22 @@
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
+	position: relative;
 }
 
-.app-contant {
+.app-content {
 	padding-top: 20vh;
 	text-align: center;
+	position: relative;
+	z-index: 2;
 }
 
 .house {
 	max-width: 390px;
 	max-height: 390px;
-	padding-top: 15vh;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
 }
