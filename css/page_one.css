@@ -4,4 +4,25 @@
 	color: #fff;
 }
 
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SFProDisplayMedium.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+.text {
+	font-family: 'SF Pro Display';
+	font-weight: 400;
+}
 
+.app {
+	max-width: 390px;
+	max-height: 844px;
+	margin: 0 auto;
+	background: url(../img/bg.jpg);
+}
+
+.app-contant {
+	text-align: center;
+}
