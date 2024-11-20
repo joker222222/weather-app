@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF-Pro-Display-Regular.woff2') format('woff2');
+}
+
+.app {
+	max-width: 390px;
+	background: linear-gradient(169.61deg, #2e3358 2.83%, #1c1b33 94.85%);
+	margin: 0 auto;
+}
+
+.weather-text {
+	padding: 49px 9px 17px 44px;
+	font-family: SF Pro Display;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 34px;
+	letter-spacing: 0.36px;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+}
+
+.input-text {
+	display: grid;
+	align-items: center;
+	position: relative;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.search-icon {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	padding: 10px 0;
+	pointer-events: none;
+	left: 24px;
+}
+
+.search-input {
+	border: none;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.25);
+	max-width: 358px;
+	max-height: 36px;
+	color: #fff;
+	outline: none;
+	flex: 1;
+	padding: 7px 8px 7px 23.63px;
+}
+
+.search-input::placeholder {
+	font-family: SF Pro Text;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: -0.4px;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+	padding: 7px 0;
+}
+
+.app-content {
+	margin: 25px;
+}
+
+.content-cloud {
+	max-width: 160px;
+	max-height: 160px;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 50% auto;
+	grid-template-rows: 100px auto;
+	justify-items: center;
+	align-items: center;
+	max-width: 340px;
+	min-height: 215px;
+	height: auto;
+	background: url(../img/bg_temperature.svg) no-repeat;
+	background-size: contain;
+	background-position: center;
+	margin-top: 30px;
+}
+
+.content-temperature {
+	font-family: SF Pro Display;
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 70px;
+	letter-spacing: 0.37400001287460327px;
+	text-align: center;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+	margin-top: 30%;
+}
+
+.content-condition,
+.content-sity {
+	font-family: SF Pro Display;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: -0.40799999237060547px;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+}
+
+.content-high-low {
+	font-family: SF Pro Display;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: -0.07800000160932541px;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+	color: rgba(235, 235, 245, 0.6);
+}

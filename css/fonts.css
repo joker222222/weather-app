@@ -1,19 +1,19 @@
 @font-face {
 	font-family: 'SF Pro Display';
-	src: url('../fonts/SFProDisplayUltralightItalic.woff2') format('woff2');
+	src: url('../fonts/SF-Pro-Display-Ultralight.woff2') format('woff2');
 }
 
 .app-city {
 	font-family: SF Pro Display;
 	font-size: 34px;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 41px;
 	letter-spacing: 0.374px;
 	text-align: center;
 	text-underline-position: from-font;
 	text-decoration-skip-ink: none;
 }
-.app-degreed {
+.app-temperature {
 	font-family: SF Pro Display;
 	font-size: 96px;
 	font-weight: 200;
