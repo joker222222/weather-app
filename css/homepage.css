@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 	color: #fff;
 }
 
@@ -20,16 +21,27 @@
 	padding-top: 20vh;
 	text-align: center;
 	position: relative;
-	z-index: 2;
+	padding: 20vh 1rem 1rem;
+	overflow: hidden;
 }
 
 .house {
-	max-width: 100%;
 	max-height: 390px;
-	height: auto;
 	position: absolute;
 	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
+	left: 0;
+	right: 0;
+}
+
+.app-city {
+	font-size: 2rem;
+	font-weight: 600;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.app-temperature {
+	font-size: 6rem;
+	font-weight: 200;
+	line-height: 1.2;
 }
