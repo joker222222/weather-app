@@ -5,8 +5,10 @@
 
 .app {
 	max-width: 390px;
+	max-height: 100%;
 	background: linear-gradient(169.61deg, #2e3358 2.83%, #1c1b33 94.85%);
 	margin: 0 auto;
+	z-index: -1;
 }
 
 .weather-text {
@@ -30,7 +32,8 @@
 	max-width: 358px;
 	max-height: 36px;
 	outline: none;
-	padding: 7px 8px 7px 23.63px;
+	padding: 7px 8px 7px 30px;
+	color: #fff;
 }
 
 .search-input::placeholder {
@@ -39,6 +42,7 @@
 }
 
 .app-content {
+	position: relative;
 	margin: 25px;
 }
 
@@ -48,6 +52,7 @@
 }
 
 .content {
+	position: relative;
 	display: grid;
 	grid-template-columns: 50% auto;
 	grid-template-rows: 100px auto;
@@ -59,6 +64,31 @@
 	background-size: contain;
 	background-position: center;
 	margin-top: 30px;
+	z-index: 3;
+}
+
+.content::before {
+	position: absolute;
+	content: '';
+	max-width: 390px;
+	max-height: 300px;
+	width: 110%;
+	height: 110%;
+	border-radius: 50%;
+	background: conic-gradient(
+		from 180deg at 50% 50%,
+		#612fab -90.71deg,
+		rgba(97, 47, 171, 0) 50.02deg,
+		#612fab 129.55deg,
+		rgba(97, 47, 171, 0) 226.06deg,
+		#612fab 269.29deg,
+		rgba(97, 47, 171, 0) 410.02deg
+	);
+	opacity: 0.6;
+	filter: blur(30px);
+	z-index: 0;
+	/* transform: translate(-5%, 0%); */
+	pointer-events: none;
 }
 
 .content-temperature {
@@ -68,7 +98,7 @@
 }
 
 .content-condition,
-.content-sity {
+.content-city {
 	font-size: 1rem;
 	font-weight: 400;
 }
@@ -81,16 +111,21 @@
 
 .search-icon {
 	position: absolute;
-	width: 10px;
-	height: 10px;
+	width: 16px;
+	height: 16px;
 	padding: 10px 0;
 	pointer-events: none;
 	left: 24px;
+	box-sizing: content-box;
+	opacity: 0.6;
 	transition: opacity 0.15s ease-in-out;
 	color: #fff;
 }
 
-.search-input:focus + .search-icon {
-	opacity: 0.1;
-	color: orange;
+.search-input:focus ~ .search-icon {
+	opacity: 0.4;
+}
+
+.content-hidden {
+	display: none;
 }
