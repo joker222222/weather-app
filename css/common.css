@@ -1,5 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: SF Pro Display;
 	line-height: 1.5;
 	font-size: 1rem;
+	color: #fff;
 }
