@@ -87,7 +87,6 @@
 	opacity: 0.6;
 	filter: blur(30px);
 	z-index: 0;
-	/* transform: translate(-5%, 0%); */
 	pointer-events: none;
 }
 
@@ -124,6 +123,33 @@
 
 .search-input:focus ~ .search-icon {
 	opacity: 0.4;
+}
+
+.not-found {
+	display: flex;
+	margin: 16px 48px;
+	gap: 10px;
+}
+
+.not-found-text-hidden,
+.not-found-btn-hidden {
+	display: none;
+}
+
+.not-found-btn {
+	flex: 1;
+	border: none;
+	border-radius: 10px;
+	margin: 5px 0;
+}
+
+.not-found-btn:hover {
+	opacity: 0.8;
+}
+
+.not-found-text {
+	font-size: 1.56rem;
+	font-weight: 400;
 }
 
 .content-hidden {
