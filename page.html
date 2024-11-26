@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Weather</title>
 		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/aos.css" />
 		<link rel="stylesheet" href="css/locations.css" />
 	</head>
 	<body>
@@ -33,7 +34,7 @@
 				</div>
 			</div>
 
-			<ol class="app-content">
+			<ol class="app-content parent" data-aos="fade-in">
 				<li class="content">
 					<span class="content-temperature">19°</span>
 					<img
@@ -108,6 +109,8 @@
 				<button class="not-found-btn-hidden">Reset</button>
 			</div>
 		</div>
+		<script src="js/aos.js"></script>
+
 		<script src="js/locations.js"></script>
 	</body>
 </html>

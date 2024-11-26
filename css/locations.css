@@ -74,7 +74,7 @@
 	max-height: 300px;
 	width: 110%;
 	height: 110%;
-	border-radius: 50%;
+	border-radius: 60%;
 	background: conic-gradient(
 		from 180deg at 50% 50%,
 		#612fab -90.71deg,
@@ -86,7 +86,7 @@
 	);
 	opacity: 0.6;
 	filter: blur(30px);
-	z-index: 0;
+	z-index: -1;
 	pointer-events: none;
 }
 
@@ -144,6 +144,7 @@
 }
 
 .not-found-btn:hover {
+	transition: opacity 0.5s ease-in-out;
 	opacity: 0.8;
 }
 
